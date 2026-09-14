@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aparna Gupta - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/profile.webp">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-near-black text-soft-white font-mono">
+    <header
+      class="fixed top-0 left-0 w-full p-4 bg-near-black bg-opacity-80 backdrop-blur-md z-50"
+    >
+      <nav class="container mx-auto flex justify-center items-center">
+        <ul
+          class="flex flex-wrap justify-center gap-x-4 gap-y-2 md:gap-x-8 text-sm md:text-base"
+        >
+          <li><a href="#home" class="nav-link">HOME</a></li>
+          <li><a href="#about" class="nav-link">ABOUT</a></li>
+          <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+          <li><a href="#skills" class="nav-link">SKILLS</a></li>
+          <li><a href="#education" class="nav-link">EDUCATION</a></li>
+          <li><a href="#certifications" class="nav-link">CERTS</a></li>
+          <li><a href="#contact" class="nav-link">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container mx-auto px-4">
+      <section
+        id="home"
+        class="min-h-screen flex flex-col items-center justify-center text-center"
+      >
+        <h1
+          id="main-name"
+          class="text-4xl sm:text-5xl md:text-6xl font-bold text-accent"
+        ></h1>
+        <p id="tagline" class="mt-4 text-lg md:text-2xl text-center">
+          <span class="typed-text"></span><span class="blinking-cursor">|</span>
+        </p>
+      </section>
+
+      <section id="about" class="py-20">
+        <h2 class="section-header">&gt; About Me</h2>
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center mt-8">
+          <div class="md:col-span-4 flex justify-center">
+            <img
+              id="profile-img"
+              src="assets/profile.webp"
+              alt="Aparna Gupta"
+              class="w-48 h-48 md:w-56 md:h-56 object-cover rounded-full border-2 border-accent shadow-lg shadow-accent/20"
+            />
+          </div>
+          <div
+            id="bio"
+            class="md:col-span-8 leading-relaxed text-gray-300"
+          ></div>
+        </div>
+      </section>
+
+      <section id="projects" class="py-20">
+        <h2 class="section-header">&gt; Projects</h2>
+        <div
+          id="projects-container"
+          class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6"
+        ></div>
+      </section>
+
+      <section id="skills" class="py-20">
+        <h2 class="section-header">&gt; Skills</h2>
+        <div id="skills-container" class="mt-8 space-y-8"></div>
+      </section>
+
+      <section id="education" class="py-20">
+        <h2 class="section-header">&gt; Education</h2>
+        <div id="education-timeline" class="timeline-container mt-8"></div>
+      </section>
+
+      <section id="certifications" class="py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div>
+            <h2 class="section-header">&gt; Certifications</h2>
+            <div id="certifications-list" class="mt-8 space-y-4"></div>
+          </div>
+          <div>
+            <h2 class="section-header">&gt; Volunteering</h2>
+            <div id="volunteering-list" class="timeline-container mt-8"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="py-20 text-center">
+        <h2 class="section-header">&gt; Connect With Me</h2>
+        <p class="mt-4 text-gray-400">
+          Open to collaborations and new opportunities.
+        </p>
+        <div class="mt-8 flex justify-center space-x-6 md:space-x-8">
+          <a
+            id="linkedin-link"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-icon-link"
+          >
+            <img
+              src="assets/linkedin.png"
+              alt="LinkedIn"
+              class="contact-icon"
+            />
+          </a>
+          <a
+            id="github-link"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-icon-link"
+          >
+            <img src="assets/github.png" alt="GitHub" class="contact-icon" />
+          </a>
+          <a id="email-link" href="#" class="contact-icon-link">
+            <img src="assets/email.png" alt="Email" class="contact-icon" />
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-center p-4 text-xs text-gray-600">
+      <p>
+        Built by Aparna Gupta with <span class="text-accent">&lt;3</span> and
+        code.
+      </p>
+      <p>Last updated: September 2026</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
